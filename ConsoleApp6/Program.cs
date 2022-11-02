@@ -46,9 +46,13 @@ var t = controller.Load(path);
 //        Console.WriteLine(item);
 //    }
 //}
+
+if (t == null)
+    return;
+
 foreach (var item in t)
 {
-    Console.WriteLine(item.name, item.poroda, item.year);
+    Console.WriteLine("{0} {1} {2}", item.name, item.poroda, item.year);
 }
 
 
